@@ -15,17 +15,11 @@
 			"strict_min_version": "142.0"
 		}
 	},
-	"permissions": [
-		"storage"
-	],
-	"host_permissions": [
-		"https://github.com/*"
-	],
+	"permissions": ["storage"],
+	"host_permissions": ["https://github.com/*"],
 	"content_scripts": [
 		{
-			"matches": [
-				"https://github.com/*"
-			],
+			"matches": ["https://github.com/*"],
 			"js": [
 				"src/storage.js",
 				"src/utils.js",
@@ -33,9 +27,7 @@
 				"src/ui.js",
 				"src/content.js"
 			],
-			"css": [
-				"src/styles.css"
-			],
+			"css": ["src/styles.css"],
 			"run_at": "document_idle"
 		}
 	],
